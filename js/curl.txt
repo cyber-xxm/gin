@@ -1,0 +1,11 @@
+curl http://localhost:9999/
+
+curl http://localhost:9999/user/geektutu
+
+curl "http://localhost:9999/users?name=Tom&role=student"
+
+curl http://localhost:9999/form  -X POST -d 'username=geektutu&password=1234'
+
+curl "http://localhost:9999/posts?id=9876&page=7"  -X POST -d 'username=geektutu&password=1234'
+
+curl -g "http://localhost:9999/post?ids[Jack]=001&ids[Tom]=002" -X POST -d 'names[a]=Sam&names[b]=David'
